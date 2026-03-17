@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_11-05-31",
+            "content": "@@ -37,45 +37,8 @@\n ) %7B%0A\n-    a := 3;%0A    b := 2;%0A    c := 1;%0A%0A\n     \n@@ -53,14 +53,15 @@\n tln(\n-a+b+c);\n+%22teste%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_11-21-15",
+            "content": "@@ -87,18 +87,11 @@\n rint\n-f(%22%25.2f%22, \n+ln(\n a+b+\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_11-22-43",
+            "content": "@@ -94,10 +94,8 @@\n %25.2f\n-%5Cn\n %22, a\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_11-23-57",
+            "content": "@@ -74,63 +74,8 @@\n 1;%0A%0A\n-    resultado := float64(a) + float64(b) + float64(c);%0A\n     \n@@ -99,17 +99,13 @@\n n%22, \n-resultado\n+a+b+c\n );%0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_11-25-13",
+            "content": "@@ -42,51 +42,37 @@\n    a\n-, b, c := 0, 0, 0;%0A    fmt.Scan(&a, &b, &c)\n+ := 3;%0A    b := 2;%0A    c := 1\n ;%0A%0A \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_11-28-30",
+            "content": "@@ -23,22 +23,8 @@\n mt%22%0A\n-import %22math%22%0A\n func\n@@ -52,21 +52,15 @@\n  := \n-0.\n 0, \n-0.\n 0, 0\n-.9\n ;%0A  \n@@ -92,88 +92,59 @@\n     \n-p := (a + b + c) / 2;%0A%0A    area := math.Sqrt(p * (p - a) * (p - b) * (p - c)\n+resultado := float64(a) + float64(b) + float64(c\n );%0A\n-%0A\n     \n@@ -168,12 +168,17 @@\n n%22, \n-a\n re\n-a\n+sultado\n );%0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-17_11-32-33",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    a, b, c := 0.0, 0.0, 0.9;\n    fmt.Scan(&a, &b, &c);\n\n    p := (a + b + c) / 2;\n\n    area := math.Sqrt(p * (p - a) * (p - b) * (p - c));\n\n    fmt.Printf(\"%.2f\\n\", area);\n}\n",
+            "lines": "13"
+        }
+    ]
+}
