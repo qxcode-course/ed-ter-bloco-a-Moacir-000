@@ -32,7 +32,12 @@
         },
         {
             "label": "2026-03-17_11-32-33",
-            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    a, b, c := 0.0, 0.0, 0.9;\n    fmt.Scan(&a, &b, &c);\n\n    p := (a + b + c) / 2;\n\n    area := math.Sqrt(p * (p - a) * (p - b) * (p - c));\n\n    fmt.Printf(\"%.2f\\n\", area);\n}\n",
+            "content": "@@ -74,17 +74,17 @@\n  0.0, 0.\n-0\n+9\n ;%0A    fm\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-17_16-38-45",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    a, b, c := 0.0, 0.0, 0.0;\n    fmt.Scan(&a, &b, &c);\n\n    p := (a + b + c) / 2;\n\n    area := math.Sqrt(p * (p - a) * (p - b) * (p - c));\n\n    fmt.Printf(\"%.2f\\n\", area);\n}\n",
             "lines": "13"
         }
     ]

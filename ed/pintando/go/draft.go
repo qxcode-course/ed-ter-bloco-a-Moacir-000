@@ -2,7 +2,7 @@ package main
 import "fmt"
 import "math"
 func main() {
-    a, b, c := 0.0, 0.0, 0.9;
+    a, b, c := 0.0, 0.0, 0.0;
     fmt.Scan(&a, &b, &c);
 
     p := (a + b + c) / 2;

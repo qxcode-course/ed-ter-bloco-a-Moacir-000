@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_16-47-40",
+            "content": "@@ -79,17 +79,16 @@\n mt.Scan(\n-&\n nome);%0A \n@@ -99,17 +99,16 @@\n mt.Scan(\n-&\n idade);%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-17_16-48-01",
+            "content": "@@ -168,17 +168,16 @@\n  crianca\n- \n %22);%0A    \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-17_16-51-31",
+            "content": "@@ -168,16 +168,17 @@\n  crianca\n+ \n %22);%0A    \n@@ -223,33 +223,34 @@\n        fmt.Print\n-f\n+ln\n (nome + %22 eh jov\n@@ -305,33 +305,34 @@\n        fmt.Print\n-f\n+ln\n (nome + %22 eh adu\n@@ -358,33 +358,34 @@\n        fmt.Print\n-f\n+ln\n (nome + %22 eh mum\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-17_16-52-07",
+            "content": "@@ -139,34 +139,33 @@\n        fmt.Print\n-ln\n+f\n (nome + %22 eh cri\n@@ -222,34 +222,33 @@\n        fmt.Print\n-ln\n+f\n (nome + %22 eh jov\n@@ -303,34 +303,33 @@\n        fmt.Print\n-ln\n+f\n (nome + %22 eh adu\n@@ -367,10 +367,9 @@\n rint\n-ln\n+f\n (nom\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-17_16-52-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    nome := \"\";\n    idade := 0;\n\n    fmt.Scan(&nome);\n    fmt.Scan(&idade);\n\n    if(idade < 12){\n        fmt.Println(nome + \" eh crianca\");\n    } else if(idade > 12 && idade < 18){\n        fmt.Println(nome + \" eh jovem\");\n    } else if(idade > 18 && idade < 65){\n        fmt.Println(nome + \" eh adulto\")\n    } else{\n        fmt.Println(nome + \" eh mumia\")\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
