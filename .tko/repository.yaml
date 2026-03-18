@@ -17,7 +17,8 @@ expanded:
 - ed@revisão
 tasks:
   ed@pintando: '{rate:100}'
-  ed@mumia: '{rate:55}'
+  ed@mumia: '{rate:100}'
+  ed@fuga: '{rate:100}'
 flags:
   painel: 0
   quests: 0
@@ -26,4 +27,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@mumia
+selected: ed@fuga
