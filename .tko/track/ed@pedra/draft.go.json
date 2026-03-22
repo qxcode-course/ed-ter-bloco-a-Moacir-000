@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-18_10-09-05",
+            "content": "@@ -41,32 +41,28 @@\n     \n-n := 0;%0A    fmt.Scan(&n);\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-22_13-12-45",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -22,47 +22,8 @@\n fmt%22\n-%0A%0Atype Jogada struct%7B%0A    pa, pb int;%0A%7D\n %0Afun\n@@ -66,68 +66,7 @@\n &n);\n-%0A%0A    jogadas := make(%5B%5DJogada, n)%0A%0A    fmt.Println(jogadas);\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-22_13-21-29",
+            "content": "@@ -112,256 +112,36 @@\n     \n-//Criando um vetor com par%C3%A2metro %22n%22 deixando todas as posi%C3%A7%C3%B5es com 0 %0A    jogadas := make(%5B%5DJogada, n)%0A%0A    //Percorrendo o vetor para inserir os elementos via scan%0A    for i := range jogadas%7B%0A        fmt.Scan(&jogadas%5Bi%5D.pa, &jogadas%5Bi%5D.pb)%0A    %7D\n+jogadas := make(%5B%5DJogada, n)\n %0A%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-22_13-33-10",
+            "content": "@@ -63,270 +63,8 @@\n ;%0A%7D%0A\n-%0A/*%0AEm Go, na cria%C3%A7%C3%A3o de uma fun%C3%A7%C3%A3o, o tipo vem depois da vari%C3%A1vel,%0Aque nesse contexto %C3%A9 um struct. Isso serve para facilitar a%0Ainser%C3%A7%C3%A3o dos tipos.%0A*/%0Afunc pontuacao(j Jogada) int%7B%0A    if(j.pa %3E j.pb)%7B%0A        return j.pa - j.pb%0A    %7D%0A%0A    return j.pb - j.pa%0A%7D%0A%0A\n func\n@@ -366,447 +366,28 @@\n     \n-ind_melhor := -1;%0A%0A    for i, jog := range jogadas%7B%0A        if jog.pa %3C 10 %7C%7C jog.pb %3C 10%7B%0A            continue%0A        %7D%0A%0A        //Ou ele %C3%A9 o primeiro ou ele %C3%A9 melhor do que o melhor%0A        if ind_melhor == -1 %7C%7C pontuacao(jog) %3C pontuacao(jogadas%5Bind_melhor%5D)%7B%0A            ind_melhor = i;%0A        %7D%0A%0A        if ind_melhor == -1%7B%0A            fmt.Println(%22sem ganhador%22)%0A        %7D else%7B%0A            fmt.Println(ind_melhor)%0A        %7D%0A    %7D\n+fmt.Println(jogadas);\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-22_13-46-10",
+            "content": "@@ -927,23 +927,21 @@\n       %7D%0A\n+%0A\n     \n-%7D%0A%0A\n     if i\n@@ -957,32 +957,36 @@\n  == -1%7B%0A        \n+   \n+ \n fmt.Println(%22sem\n@@ -997,16 +997,20 @@\n hador%22)%0A\n+    \n     %7D el\n@@ -1013,32 +1013,36 @@\n %7D else%7B%0A        \n+ \n+   \n fmt.Println(ind_\n@@ -1049,16 +1049,26 @@\n melhor)%0A\n+        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-03-22_14-39-57",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Jogada struct{\n    pa, pb int;\n}\n\n/*\nEm Go, na cria\u00e7\u00e3o de uma fun\u00e7\u00e3o, o tipo vem depois da vari\u00e1vel,\nque nesse contexto \u00e9 um struct. Isso serve para facilitar a\ninser\u00e7\u00e3o dos tipos.\n*/\nfunc pontuacao(j Jogada) int{\n    if(j.pa > j.pb){\n        return j.pa - j.pb\n    }\n\n    return j.pb - j.pa\n}\n\nfunc main() {\n    n := 0;\n    fmt.Scan(&n);\n\n    //Criando um vetor com par\u00e2metro \"n\" deixando todas as posi\u00e7\u00f5es com 0 \n    jogadas := make([]Jogada, n)\n\n    //Percorrendo o vetor para inserir os elementos via scan\n    for i := range jogadas{\n        fmt.Scan(&jogadas[i].pa, &jogadas[i].pb)\n    }\n\n    ind_melhor := -1;\n\n    for i, jog := range jogadas{\n        if jog.pa < 10 || jog.pb < 10{\n            continue\n        }\n\n        //Ou ele \u00e9 o primeiro ou ele \u00e9 melhor do que o melhor\n        if ind_melhor == -1 || pontuacao(jog) < pontuacao(jogadas[ind_melhor]){\n            ind_melhor = i;\n        }\n    }\n\n    if ind_melhor == -1{\n        fmt.Println(\"sem ganhador\")\n    } else{\n        fmt.Println(ind_melhor)\n    }\n}\n",
+            "lines": "52"
+        }
+    ]
+}

@@ -42,3 +42,14 @@
 2026-03-18 01:05:56, EXEC, v:1, k:ed@fuga, mode:FULL, rate:80, size:24
 2026-03-18 01:12:24, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100, size:24
 2026-03-18 01:12:44, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-03-18 10:08:34, MOVE, v:1, k:ed@pedra, mode:DOWN
+2026-03-18 10:08:40, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-18 10:09:05, EXEC, v:1, k:ed@pedra, mode:FREE, size:5
+2026-03-18 10:09:17, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-03-18 10:09:18, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-18 10:09:23, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0
+2026-03-18 10:09:26, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-03-18 10:09:27, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-03-18 10:52:52, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-03-18 10:53:27, SELF, v:1, k:ed@pintando, self:1, rate:100, study:40, concept:1
+2026-03-18 10:53:44, SELF, v:1, k:ed@pintando, self:1, rate:100, study:49, concept:1

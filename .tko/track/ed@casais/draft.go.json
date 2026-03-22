@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_14-43-15",
+            "content": "@@ -41,129 +41,25 @@\n     \n-n := 0;%0A    fmt.Scan(n);%0A%0A    animais := make(%5B%5Dint, n);%0A%0A    for i := range animais%7B%0A        fmt.Scan(&animais%5Bi%5D)%0A    %7D\n+fmt.Println(%22A%22);\n %0A%0A  \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-22_14-47-30",
+            "content": "@@ -168,28 +168,7 @@\n     \n-fmt.Println(animais);\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-22_14-47-47",
+            "content": "@@ -58,17 +58,16 @@\n mt.Scan(\n-&\n n);%0A%0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-22_14-51-15",
+            "content": "@@ -98,225 +98,8 @@\n  n);\n-%0A    //Declarando um map (chave e conte%C3%BAdo)%0A    solteiros := make(map%5Bint%5Dint); %0A%0A    //Inser%C3%A7%C3%A3o%0A    solteiros%5B-5%5D = 3%0A%0A    //Devolve o valor da chave e, caso n%C3%A3o tenha, devolve 0 (default)%0A    valor := solteiros%5B-5%5D;\n %0A%0A  \n@@ -170,44 +170,27 @@\n    f\n-or _, animal := range animais%7B%0A%0A    %7D\n+mt.Println(animais);\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-22_14-55-28",
+            "content": "@@ -387,25 +387,44 @@\n    f\n-mt.Println(valor);\n+or _, animal := range animais%7B%0A%0A    %7D\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-22_14-55-49",
+            "content": "@@ -311,9 +311,10 @@\n ros%5B\n-6\n+-5\n %5D;%0A%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-22_14-55-58",
+            "content": "@@ -181,17 +181,17 @@\n  %0A%0A    /\n-*\n+/\n Inser%C3%A7%C3%A3o\n@@ -216,15 +216,8 @@\n  = 3\n-%0A    */\n %0A%0A  \n@@ -292,47 +292,13 @@\n     \n-//\n valor\n-1 := solteiros%5B-3%5D;%0A    //valor2\n  := \n@@ -385,216 +385,26 @@\n     \n-n_pares := 0;%0A%0A    for _, animal := range animais%7B%0A        if (solteiros%5B-animal%5D %3E 0)%7B%0A            solteiros%5B-animal%5D--;%0A            n_pares++;%0A        %7D else%7B%0A            solteiros%5Banimal%5D++;%0A        %7D%0A    %7D\n+fmt.Println(valor);\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-22_15-03-49",
+            "content": "@@ -635,34 +635,7 @@\n    %7D\n-%0A%0A    fmt.Println(n_pares);\n %0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-22_15-04-16",
+            "content": "@@ -445,62 +445,14 @@\n     \n-//O %22_%22 identifica que n%C3%A3o preciso desse valor%0A    \n for\n+ _,\n  ani\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-03-22_15-06-32",
+            "content": "@@ -499,11 +499,8 @@\n  for\n- _,\n  ani\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-22_15-06-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    n := 0;\n    fmt.Scan(&n);\n\n    animais := make([]int, n);\n    //Declarando um map (chave e conte\u00fado)\n    solteiros := make(map[int]int); \n\n    /*Inser\u00e7\u00e3o\n    solteiros[-5] = 3\n    */\n\n    //Devolve o valor da chave e, caso n\u00e3o tenha, devolve 0 (default)\n    //valor1 := solteiros[-3];\n    //valor2 := solteiros[6];\n\n    for i := range animais{\n        fmt.Scan(&animais[i])\n    }\n\n    n_pares := 0;\n\n    //O \"_\" identifica que n\u00e3o preciso desse valor\n    for _, animal := range animais{\n        if (solteiros[-animal] > 0){\n            solteiros[-animal]--;\n            n_pares++;\n        } else{\n            solteiros[animal]++;\n        }\n    }\n\n    fmt.Println(n_pares);\n}\n",
+            "lines": "36"
+        }
+    ]
+}
