@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_15-52-56",
+            "content": "@@ -41,51 +41,35 @@\n     \n-q := 0;%0A    c := %22%22;%0A    fmt.Scan(&q, &c);%0A%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-22_22-10-52",
+            "content": "@@ -85,29 +85,7 @@\n );%0A%0A\n-    fmt.Println(q, c);\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-22_22-11-10",
+            "content": "@@ -107,108 +107,7 @@\n  c);\n-%0A%0A    x, y := 0, 0;%0A    fmt.Scan(&x, &y);%0A%0A    fmt.Println(x, y);%0A%0A    for i := 0; i %3C q; i++%7B%0A%0A    %7D\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-22_22-13-08",
+            "content": "@@ -77,34 +77,32 @@\n n(&q, &c);%0A%0A    \n-//\n fmt.Println(q, c\n@@ -100,24 +100,24 @@\n ntln(q, c);%0A\n+\n %0A    x, y :=\n@@ -154,10 +154,8 @@\n     \n-//\n fmt.\n@@ -202,81 +202,8 @@\n ++%7B%0A\n-        if(c == %22L%22)%7B%0A            fmt.Println(%22it's working!%22);%0A        %7D\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-22_22-14-16",
+            "content": "@@ -240,27 +240,8 @@\n     \n-x--;%0A            //\n fmt.\n@@ -285,31 +285,7 @@\n    %7D\n-%0A%0A    fmt.Println(x ,y);\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-22_22-15-18",
+            "content": "@@ -23,53 +23,8 @@\n mt%22%0A\n-%0Atype Posicao struct%7B%0A    posX, posY int;%0A%7D%0A%0A\n func\n@@ -111,51 +111,8 @@\n );%0A%0A\n-    posicoes = make(%5B%5DPosicao, q);%0A%0A    /*%0A\n     \n@@ -146,23 +146,16 @@\n &x, &y);\n-%0A    */\n %0A%0A    //\n@@ -178,107 +178,8 @@\n );%0A%0A\n-    for i := range posicoes%7B%0A        fmt.Scan(&posicoes%5Bi%5D.posX, &posicoes%5Bi%5D.posY);%0A    %7D%0A%0A    /*%0A\n     \n@@ -302,16 +302,16 @@\n %0A    %7D%0A%0A\n+\n     fmt.\n@@ -329,13 +329,6 @@\n y);%0A\n-    */%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-22_22-24-56",
+            "content": "@@ -165,17 +165,16 @@\n osicoes \n-:\n = make(%5B\n@@ -365,35 +365,8 @@\n  %7D%0A%0A\n-    fmt.Println(posicoes)%0A%0A\n     \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-22_22-25-21",
+            "content": "@@ -126,24 +126,26 @@\n , &c);%0A%0A    \n+//\n fmt.Println(\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-22_22-25-36",
+            "content": "@@ -126,26 +126,24 @@\n , &c);%0A%0A    \n-//\n fmt.Println(\n@@ -145,24 +145,24 @@\n ntln(q, c);%0A\n+\n %0A    posicoe\n@@ -183,24 +183,105 @@\n sicao, q);%0A%0A\n+    /*%0A    x, y := 0, 0;%0A    fmt.Scan(&x, &y);%0A    */%0A%0A    //fmt.Println(x, y);%0A%0A\n     for i :=\n@@ -360,26 +360,24 @@\n %0A    %7D%0A%0A    \n-//\n fmt.Println(\n@@ -386,20 +386,23 @@\n sicoes)%0A\n+%0A\n     \n+/*\n %0A    for\n@@ -456,32 +456,17 @@\n         \n-posicoes%5Bi%5D.posX\n+x\n --;%0A    \n@@ -521,15 +521,41 @@\n %7D%0A    %7D%0A\n+%0A\n     \n+fmt.Println(x ,y);%0A    */\n %0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-22_22-27-34",
+            "content": "@@ -459,35 +459,8 @@\n    %7D\n-%0A%0A    fmt.Println(posicoes)\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-22_22-28-00",
+            "content": "@@ -464,36 +464,21 @@\n %0A   \n- saida :=\n  fmt.\n-Sp\n+P\n rint\n-f(%22%25v%22, \n+ln(\n posi\n@@ -486,124 +486,8 @@\n oes)\n-;%0A    if(saida == %22%5B%5D%22)%7B%0A        fmt.Println(%22N%22);%0A    %7D else%7B%0A        fmt.Println(saida%5B1 : len(saida) - 1%5D);%0A    %7D\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-03-22_22-31-01",
+            "content": "@@ -586,17 +586,17 @@\n n(saida%5B\n-2\n+1\n  : len(s\n@@ -607,9 +607,9 @@\n ) - \n-2\n+1\n %5D);%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-22_22-31-14",
+            "content": "@@ -322,103 +322,58 @@\n     \n-anterior := posicoes%5B0%5D;%0A%0A    if c == %22L%22%7B%0A        posicoes%5B0%5D.posX--;%0A    %7D else if \n+for i := 0; i %3C q; i++%7B%0A        if(\n c == %22\n-R%22%7B%0A\n+L%22)%7B%0A    \n     \n@@ -389,174 +389,110 @@\n oes%5B\n-0\n+i\n %5D.posX\n-++\n+--\n ;%0A    \n-%7D else if c == %22U%22%7B%0A        posicoes%5B0%5D.posY++;%0A    %7D else if c == %22D%22%7B%0A        posicoes%5B0%5D.posY--;%0A    %7D%0A%0A    for i := 1; i %3C q; i++%7B%0A        atual :=\n+        //fmt.Println(%22it's working!%22);%0A        %7D%0A    %7D%0A%0A    saida := fmt.Sprintf(%22%25v%22,\n  pos\n@@ -500,143 +500,117 @@\n coes\n-%5Bi%5D\n+)\n ;%0A    \n-    posicoes%5Bi%5D = anterior%0A        anterior = atual;%0A    %7D%0A%0A    for _, p := range posicoes%7B%0A        fmt.Println(p.posX, p.posY\n+if(saida == %22%5B%5D%22)%7B%0A        fmt.Println(%22N%22);%0A    %7D else%7B%0A        fmt.Println(saida%5B2 : len(saida) - 2%5D\n );%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-22_22-39-47",
+            "content": "@@ -352,41 +352,21 @@\n     \n-switch c %7B%0A        case %22L%22:%0A    \n+if c == %22L%22%7B%0A\n     \n@@ -397,21 +397,27 @@\n     \n-    case\n+%7D else if c ==\n  %22R%22\n-:\n+%7B\n %0A   \n@@ -413,36 +413,32 @@\n == %22R%22%7B%0A        \n-    \n posicoes%5B0%5D.posX\n@@ -449,32 +449,36 @@\n     \n-    case %22U%22:%0A  \n+%7D else if c == %22U%22%7B%0A\n         \n   po\n@@ -465,34 +465,32 @@\n == %22U%22%7B%0A        \n-  \n posicoes%5B0%5D.posY\n@@ -501,26 +501,28 @@\n     \n-    case %22D%22:%0A    \n+%7D else if c == %22D%22%7B%0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-22_22-40-39",
+            "content": "@@ -505,18 +505,18 @@\n %5B0%5D.posY\n---\n+++\n ;%0A      \n@@ -551,26 +551,26 @@\n coes%5B0%5D.posY\n-++\n+--\n ;%0A    %7D%0A%0A   \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-22_22-41-31",
+            "content": "package main\nimport \"fmt\"\n\ntype Posicao struct{\n    posX, posY int;\n}\n\nfunc main() {\n    q := 0;\n    c := \"\";\n    fmt.Scan(&q, &c);\n\n    //fmt.Println(q, c);\n\n    posicoes := make([]Posicao, q);\n\n    for i := range posicoes{\n        fmt.Scan(&posicoes[i].posX, &posicoes[i].posY);\n    }\n\n    //fmt.Println(posicoes)\n    \n    anterior := posicoes[0];\n\n    switch c {\n        case \"L\":\n            posicoes[0].posX--;\n        case \"R\":\n            posicoes[0].posX++;\n        case \"U\":\n            posicoes[0].posY--;\n        case \"D\":\n            posicoes[0].posY++;\n    }\n\n    for i := 1; i < q; i++{\n        atual := posicoes[i];\n        posicoes[i] = anterior\n        anterior = atual;\n    }\n\n    for _, p := range posicoes{\n        fmt.Println(p.posX, p.posY);\n    }\n    \n}\n",
+            "lines": "46"
+        }
+    ]
+}

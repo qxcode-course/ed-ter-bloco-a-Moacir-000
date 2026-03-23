@@ -26,7 +26,7 @@ func main() {
     //Criando um vetor com parâmetro "n" deixando todas as posições com 0 
     jogadas := make([]Jogada, n)
 
-    //Percorrendo o vetor para inserir os elementos via scan
+    //Percorrendo o vetor para inserir os elementos via Scan
     for i := range jogadas{
         fmt.Scan(&jogadas[i].pa, &jogadas[i].pb)
     }
