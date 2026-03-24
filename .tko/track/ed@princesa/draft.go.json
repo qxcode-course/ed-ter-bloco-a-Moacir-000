@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_11-00-18",
+            "content": "@@ -82,25 +82,7 @@\n     \n-fmt.Println(n, e);\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_11-00-46",
+            "content": "@@ -23,87 +23,8 @@\n mt%22%0A\n-%0Afunc procurar_vivo(elementos %5B%5Dint, size, pos int)%7B%0A    fmt.Println(size);%0A%7D%0A%0A\n func\n@@ -77,76 +77,25 @@\n e);%0A\n-    \n %0A    \n-elementos := make(%5B%5Dint, n);%0A%0A    procurar_vivo(elementos, \n+fmt.Println(\n n, e\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_11-24-48",
+            "content": "package main\nimport \"fmt\"\n\nfunc procurar_vivo(elementos []int, size, pos int){\n    fmt.Println(size);\n}\n\nfunc main() {\n    n, e := 0, 0;\n    fmt.Scan(&n, &e);\n    \n    elementos := make([]int, n);\n\n    procurar_vivo(elementos, n, e);\n}\n",
+            "lines": "15"
+        }
+    ]
+}
