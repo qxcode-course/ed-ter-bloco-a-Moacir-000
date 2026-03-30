@@ -33,8 +33,8 @@ func getCalmWomen(vet []int) []int {
 func sortVet(vet []int) []int {
 	final := make([]int, 0)
 
-	maior := 1
-	menor := -1
+	//maior := 1
+	//menor := -1
 
 	for i := range vet{
 		if(vet[i] == -vet[i]){
@@ -51,8 +51,16 @@ func sortStress(vet []int) []int {
 }
 
 func reverse(vet []int) []int {
-	_ = vet
-	return nil
+	final := make([]int, 0);
+
+	tamanho := len(vet)
+	tamanho = tamanho - 1;
+	
+	for i := tamanho; i >= 0; i--{
+		final = append(final, vet[i])
+	}
+
+	return final
 }
 
 func unique(vet []int) []int {
