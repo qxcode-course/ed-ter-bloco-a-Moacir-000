@@ -20,6 +20,8 @@ func equals(a []int, b []int) bool {
 	// e não pode usar nenhum tipo de laço
 	// Use recursao para consultar os outros elementos equals(a[1:], b[1:])
 	// não altere o protótipo da função nem crie funções auxiliares
+
+	//return equals(a[1:], b[1:]) 
 	_, _ = a, b
 	return false
 }

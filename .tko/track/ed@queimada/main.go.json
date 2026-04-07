@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_00-27-27",
+            "content": "@@ -108,141 +108,8 @@\n l, c\n-%0A%0A%09nl := len(grid)%0A%09nc := len(grid%5B0%5D)%0A%0A%09if c %3C 0 %7C%7C c %3E= nc %7C%7C 1 %3E 0 %7C%7C 1 %3E= nl%7B%0A%09%09return%0A%09%7D%0A%0A%09if(grid%5Bl%5D%5Bc%5D != '#')%7B%0A%09%09return%0A%09%7D%0A%0A%09\n %0A%09//\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-04-07_00-43-14",
+            "content": "@@ -241,156 +241,8 @@\n %7D%0A%0A%09\n-grid%5Bl%5D%5Bc%5D = 'o'%0A%09func burnTrees(grid, l, c + 1);%0A%09func burnTrees(grid, l, c - 1);%0A%09func burnTrees(grid, l - 1, c);%0A%09func burnTrees(grid, l + 1, c);\n %0A%09//\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-07_00-46-09",
+            "content": "@@ -255,16 +255,21 @@\n  = 'o'%0A%09\n+func \n burnTree\n@@ -284,24 +284,29 @@\n l, c + 1);%0A%09\n+func \n burnTrees(gr\n@@ -317,24 +317,29 @@\n l, c - 1);%0A%09\n+func \n burnTrees(gr\n@@ -354,16 +354,21 @@\n 1, c);%0A%09\n+func \n burnTree\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-04-07_00-46-36",
+            "content": "@@ -46,29 +46,31 @@\n )%0A%0Afunc \n-is_value\n+burnTrees\n (grid\n+ \n %5B%5D%5B%5Drune\n@@ -83,27 +83,34 @@\n  int\n-, value rune) bool%7B\n+) %7B%0A%09_, _, _ = grid, l, c%0A\n %0A%09nl\n@@ -122,17 +122,16 @@\n en(grid)\n-;\n %0A%09nc := \n@@ -142,17 +142,16 @@\n grid%5B0%5D)\n-;\n %0A%0A%09if c \n@@ -170,17 +170,17 @@\n nc %7C%7C 1 \n-%3C\n+%3E\n  0 %7C%7C 1 \n@@ -198,149 +198,35 @@\n turn\n- false;%0A%09%7D%0A%0A%09return grid%5Bl%5D%5Bc%5D != value;%0A%7D%0A%0Afunc burnTrees(grid %5B%5D%5B%5Drune, l, c int) %7B%0A%09_, _, _ = grid, l, c%0A%0A%09if (!is_value(grid, l, c,\n+%0A%09%7D%0A%0A%09if(grid%5Bl%5D%5Bc%5D !=\n  '#')\n-)\n %7B%0A%09%09\n@@ -231,17 +231,16 @@\n %09%09return\n-;\n %0A%09%7D%0A%0A%09gr\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-04-07_00-50-59",
+            "content": "@@ -218,17 +218,17 @@\n d%5Bl%5D%5Bc%5D \n-=\n+!\n = value;\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-04-07_00-51-07",
+            "content": "@@ -218,17 +218,17 @@\n d%5Bl%5D%5Bc%5D \n-!\n+=\n = value;\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-04-07_00-53-14",
+            "content": "@@ -218,17 +218,17 @@\n d%5Bl%5D%5Bc%5D \n-=\n+!\n = value;\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-04-07_00-53-32",
+            "content": "@@ -165,17 +165,17 @@\n  %7C%7C \n-l\n+1\n  %3C 0 %7C%7C \n l %3E=\n@@ -170,17 +170,17 @@\n  %3C 0 %7C%7C \n-l\n+1\n  %3E= nl%7B%0A\n@@ -474,16 +474,216 @@\n  1, c);%0A\n+%09// se estiver fora da matriz, retorne%0A%09// se o elemento atual n%C3%A3o for uma arvore, retorne%0A%09// queime a arvore colocando o caractere 'o' na posi%C3%A7%C3%A3o atual%0A%09// chame a recurs%C3%A3o para todos os 4 vizinhos%0A\n %7D%0A%0Afunc \n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-04-07_00-55-52",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc is_value(grid[][]rune, l, c int, value rune) bool{\n\tnl := len(grid);\n\tnc := len(grid[0]);\n\n\tif c < 0 || c >= nc || l < 0 || l >= nl{\n\t\treturn false;\n\t}\n\n\treturn grid[l][c] == value;\n}\n\nfunc burnTrees(grid [][]rune, l, c int) {\n\t_, _, _ = grid, l, c\n\n\tif (!is_value(grid, l, c, '#')){\n\t\treturn;\n\t}\n\n\tgrid[l][c] = 'o'\n\tburnTrees(grid, l, c + 1);\n\tburnTrees(grid, l, c - 1);\n\tburnTrees(grid, l - 1, c);\n\tburnTrees(grid, l + 1, c);\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc, lfire, cfire int\n\tfmt.Sscanf(line, \"%d %d %d %d\", &nl, &nc, &lfire, &cfire)\n\n\tgrid := make([][]rune, 0, nl)\n\tfor range nl {\n\t\tscanner.Scan()\n\t\tline := []rune(scanner.Text())\n\t\tgrid = append(grid, line)\n\t}\n\tburnTrees(grid, lfire, cfire)\n\tshowGrid(grid)\n}\n\nfunc showGrid(grid [][]rune) {\n\tfor _, line := range grid {\n\t\tfmt.Println(string(line))\n\t}\n}\n",
+            "lines": "55"
+        }
+    ]
+}

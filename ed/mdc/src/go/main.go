@@ -13,7 +13,8 @@ func mdc(a, b int) int {
 		return a;
 	}
 
-	return mdc(a%b, a/b);
+	r := a % b;
+	return mdc(b, r);
 }
 
 func main() {
