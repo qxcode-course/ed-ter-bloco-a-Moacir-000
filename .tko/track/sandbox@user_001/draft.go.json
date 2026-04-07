@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_11-11-31",
+            "content": "@@ -23,140 +23,53 @@\n mt%22%0A\n-%0A\n func \n-fatorial(valor int) int %7B%0A    if valor == 1%7B%0A        return 1;%0A    %7D%0A%0A    return valor * fatorial(valor);%0A%7D%0A%0Afunc main() %7B%0A    \n+main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-01_11-13-49",
+            "content": "@@ -156,36 +156,7 @@\n     \n-a := %220%22;%0A    fmt.Println(a);\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-01_11-14-11",
+            "content": "@@ -29,79 +29,51 @@\n unc \n-main() %7B%0A    num := 12345;%0A    qtd := 0;%0A%0A    for\n+fatorial(valor int) int \n %7B%0A    \n- \n-   if(num\n+if valor\n  == \n-0)\n+1\n %7B%0A  \n@@ -82,78 +82,91 @@\n     \n-    break;%0A        %7D%0A%0A        qtd += 1;%0A        num = num / 10;%0A    %7D%0A\n+return 1;%0A    %7D%0A%0A    return valor * fatorial(valor);%0A%7D%0A%0Afunc main() %7B%0A    a := %220%22;\n %0A   \n@@ -182,11 +182,10 @@\n tln(\n-qtd)\n+a);\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-06_09-47-46",
+            "content": "@@ -49,15 +49,13 @@\n  := \n-489\n 123\n-6\n+45\n ;%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_09-48-11",
+            "content": "@@ -29,35 +29,36 @@\n unc \n-contarDigitos(num int) int%7B\n+main() %7B%0A    num := 4891236;\n %0A   \n@@ -68,16 +68,17 @@\n d := 0;%0A\n+%0A\n     for%7B\n@@ -182,67 +182,28 @@\n   %7D%0A\n-%7D%0A%0Afunc main() %7B%0A    num := 4891236;%0A%0A    contarDigitos(num\n+%0A    fmt.Println(qtd\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_09-49-24",
+            "content": "@@ -179,25 +179,8 @@\n    %7D\n-%0A%0A    return qtd;\n %0A%7D%0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_09-49-38",
+            "content": "@@ -239,20 +239,8 @@\n     \n-fmt.Println(\n cont\n@@ -257,9 +257,7 @@\n num)\n-);\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-06_09-50-07",
+            "content": "@@ -24,411 +24,8 @@\n t%22%0A%0A\n-/* Usando ponteiros%0Afunc contarDigitosRecursivo(num int, qtd *int)%7B%0A    if(num == 0)%7B //ponto de parada%0A        return;%0A    %7D%0A%0A    *qtd += 1; //a%C3%A7%C3%A3o%0A    contarDigitosRecursivo(num / 10, qtd) //chamada recursiva %0A%0A%7D%0A*/%0A%0Afunc contarDigitosRecursivo(num int, qtd int) int%7B%0A    if(num == 0)%7B //ponto de parada%0A        return qtd;%0A    %7D%0A    contarDigitosRecursivo(num / 10, qtd + 1) //chamada recursiva %0A%0A%7D%0A%0A\n func\n@@ -101,26 +101,8 @@\n  0)%7B\n- //ponto de parada\n %0A   \n@@ -149,15 +149,8 @@\n = 1;\n- //a%C3%A7%C3%A3o\n %0A   \n@@ -173,33 +173,8 @@\n  10;\n- //diminui%C3%A7%C3%A3o do problema\n %0A   \n@@ -264,24 +264,12 @@\n itos\n-Recursivo\n (num\n-, 0\n ));%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-06_10-32-30",
+            "content": "@@ -356,23 +356,16 @@\n   %7D%0A    \n-return \n contarDi\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-06_10-32-42",
+            "content": "package main\nimport \"fmt\"\n\n/* Usando ponteiros\nfunc contarDigitosRecursivo(num int, qtd *int){\n    if(num == 0){ //ponto de parada\n        return;\n    }\n\n    *qtd += 1; //a\u00e7\u00e3o\n    contarDigitosRecursivo(num / 10, qtd) //chamada recursiva \n\n}\n*/\n\nfunc contarDigitosRecursivo(num int, qtd int) int{\n    if(num == 0){ //ponto de parada\n        return qtd;\n    }\n    return contarDigitosRecursivo(num / 10, qtd + 1) //chamada recursiva \n\n}\n\nfunc contarDigitos(num int) int{\n    qtd := 0;\n    for{\n        if(num == 0){ //ponto de parada\n            break;\n        }\n\n        qtd += 1; //a\u00e7\u00e3o\n        num = num / 10; //diminui\u00e7\u00e3o do problema\n    }\n\n    return qtd;\n}\n\nfunc main() {\n    num := 4891236;\n\n    fmt.Println(contarDigitosRecursivo(num, 0));\n}\n",
+            "lines": "42"
+        }
+    ]
+}

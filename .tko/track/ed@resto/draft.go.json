@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_12-45-09",
+            "content": "@@ -41,52 +41,35 @@\n     \n-n := 0;%0A    fmt.Scan(&n);%0A%0A    fmt.Println(n\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_12-50-55",
+            "content": "@@ -23,131 +23,8 @@\n mt%22%0A\n-%0Afunc resto(n int) int%7B%0A    if(n %25 2 == 0)%7B%0A        return 0;%0A    %7D%0A%0A    //mod := resto(n) %25 2;%0A    return resto(n) / 2%0A%7D%0A%0A\n func\n@@ -68,11 +68,25 @@\n );%0A%0A    \n+fmt.Println(n)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-06_12-56-01",
+            "content": "@@ -195,28 +195,7 @@\n     \n-fmt.Println(resto(n))\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_12-56-18",
+            "content": "@@ -60,9 +60,9 @@\n %25 2 \n-!\n+=\n = 0)\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_12-57-57",
+            "content": "@@ -42,14 +42,11 @@\n nt) \n-str\n in\n-g\n+t\n %7B%0A  \n@@ -52,17 +52,21 @@\n    if(n \n-=\n+%25 2 !\n = 0)%7B%0A  \n@@ -78,18 +78,17 @@\n  return \n-%22%22\n+0\n ;%0A    %7D%0A\n@@ -96,33 +96,25 @@\n     \n-r := n / 2;%0A    \n+//\n mod :\n- \n = \n-n\n+resto(n)\n  %25 2\n@@ -130,10 +130,20 @@\n urn \n-%22%22\n+resto(n) / 2\n %0A%7D%0A%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_13-03-46",
+            "content": "@@ -113,16 +113,17 @@\n    mod :\n+ \n = n %25 2;\n@@ -123,17 +123,16 @@\n  n %25 2;%0A\n-%0A\n     retu\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_13-03-55",
+            "content": "@@ -131,23 +131,17 @@\n     \n-fmt.Println(r);\n+return %22%22\n %0A%7D%0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_13-05-57",
+            "content": "@@ -37,16 +37,23 @@\n o(n int)\n+ string\n %7B%0A    if\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_13-06-02",
+            "content": "@@ -69,18 +69,21 @@\n   return\n+ %22%22\n ;%0A\n-\n     %7D%0A%0A \n@@ -137,13 +137,8 @@\n ln(r\n-, mod\n );%0A%7D\n@@ -192,16 +192,28 @@\n     \n+fmt.Println(\n resto(n)\n ;%0A%7D%0A\n@@ -208,12 +208,12 @@\n resto(n)\n-;\n+)\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_13-06-52",
+            "content": "@@ -112,28 +112,16 @@\n  n %25 2;%0A\n-    resto(n)\n %0A    fmt\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_13-07-20",
+            "content": "@@ -122,17 +122,17 @@\n   resto(\n-r\n+n\n )%0A    fm\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_13-07-29",
+            "content": "package main\nimport \"fmt\"\n\nfunc resto(n int){\n    if(n == 0){\n        return;\n    }\n\n    r := n / 2;\n    mod := n % 2;\n    resto(r)\n    fmt.Println(r, mod);\n}\n\nfunc main() {\n    n := 0;\n    fmt.Scan(&n);\n\n    resto(n);\n}\n",
+            "lines": "20"
+        }
+    ]
+}
