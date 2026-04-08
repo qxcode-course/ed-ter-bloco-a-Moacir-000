@@ -9,25 +9,40 @@ import (
 )
 
 func tostr(vet []int) string {
-	if(len(vet) == 0){
-		return "";
+	if len(vet) == 0 {
+		return "[]"
 	}
 
-	if(len(vet) == 1){
-		return fmt.Sprintf("[%d]", vet[0])
+	return "[" + tostrAux(vet) + "]"
+}
+
+func tostrAux(vet []int) string {
+	if len(vet) == 1 {
+		return fmt.Sprintf("%d", vet[0])
 	}
 
-	return fmt.Sprintf("%d, %s", vet[0], tostr(vet[1:]))
+	return fmt.Sprintf("%d, %s", vet[0], tostrAux(vet[1:]))
 }
 
 func tostrrev(vet []int) string {
-	_ = vet
-	return ""
+	if len(vet) == 0 {
+		return "[]"
+	}
+
+	return "[" + tostrrevAux(vet) + "]"
+}
+
+func tostrrevAux(vet []int) string {
+	if len(vet) == 1 {
+		return fmt.Sprintf("%d", vet[0])
+	}
+
+	return fmt.Sprintf("%s, %d", tostrrevAux(vet[1:]), vet[0])
 }
 
 // reverse: inverte os elementos do slice
 func reverse(vet []int) {
-	_ = vet
+	
 }
 
 // sum: soma dos elementos do slice
@@ -55,7 +70,7 @@ func mult(vet []int) int {
 func min(vet []int) int {
 	//menor := -1;
 	if(len(vet) == 0){
-		return 0;
+		return -1;
 	}   
 	return 0
 }
