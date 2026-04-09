@@ -42,7 +42,13 @@ func tostrrevAux(vet []int) string {
 
 // reverse: inverte os elementos do slice
 func reverse(vet []int) {
-	
+	if(len(vet) <= 1){
+		return;
+	}
+
+	vet[0], vet[len(vet) - 1] = vet[len(vet) - 1], vet[0]
+
+	reverse(vet[1: len(vet) - 1]);
 }
 
 // sum: soma dos elementos do slice
@@ -68,11 +74,28 @@ func mult(vet []int) int {
 // var rec func(v []int) (int, int)
 // para fazer uma recursão que retorna valor e índice
 func min(vet []int) int {
-	//menor := -1;
 	if(len(vet) == 0){
 		return -1;
-	}   
-	return 0
+	}
+
+	var rec func(v []int) (int, int)
+
+	rec = func(v []int) (int, int){
+		if(len(v) == 1){
+			return 0, v[0];
+		}
+
+		i, val := rec(v[1:]);
+
+		if(v[0] <= val){
+			return 0, v[0];
+		}
+
+		return i + 1, val;
+	}
+	
+	i, _ := rec(vet)
+	return i;
 }
 
 func main() {

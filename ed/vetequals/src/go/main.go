@@ -22,15 +22,19 @@ func equals(a []int, b []int) bool {
 	// não altere o protótipo da função nem crie funções auxiliares
 	//return equals(a[1:], b[1:])
 
-	if(len(a) == 0){
+	if(EhVazio(a) && EhVazio(b)){
+		return true;
+	}
+
+	if(EhVazio(a) || EhVazio(b)){
 		return false;
 	}
 
-	if(len(b) == 0){
+	if(a[0] != b[0]){
 		return false;
-	} 
-	_, _ = a, b
-	return false
+	}
+
+	return equals(a[1:], b[1:]);
 }
 
 func main() {
