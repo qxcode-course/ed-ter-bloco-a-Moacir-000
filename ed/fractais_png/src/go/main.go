@@ -34,10 +34,9 @@ func main() {
 		pen.Left(36) // gira
 	}
 
-	pen.SavePNG("tree.png")
+	pen.SavePNG("teste.png")
 	fmt.Println("PNG file created successfully.")
-}
-*/
+}*/
 
 package main
 
@@ -46,38 +45,33 @@ import (
 	"math/rand"
 )
 
-func ri(inf, sup int) float64 {
-	return float64(rand.Intn(sup-inf+1) + inf)
+func randInt(min, max int) int {
+	return min + rand.Intn(max-min+1)
 }
 
-func arvere(pen *Pen, dist float64) {
-	if dist < 10 {
-		if ri(0, 50) == 0 {
-			pen.SetRGB(255, 0, 0)
-			pen.FillCircle(10)
-		}
-		return
+func arvore(pen *Pen, dist float64){
+	if dist < 10{
+		return;
 	}
-	ang_dir := ri(10, 40)
-	ang_esq := ri(10, 40)
-
-	pen.SetLineWidth(dist / 5)
-	pen.SetRGB(0, 0, 0)
-	pen.Walk(dist)
-	pen.Right(ang_dir)
-	arvere(pen, dist*(ri(80, 85)/100))
-	pen.Left(ang_dir + ang_esq)
-	arvere(pen, dist*(ri(80, 85)/100))
-	pen.Right(ang_esq)
-	pen.SetRGB(0, 0, 0)
+	ang := 40.0
+	fator := 0.78
+	pen.Walk(dist);
+	pen.Right(ang);
+	arvore(pen, dist * fator)
+	pen.Right(-2 * ang);
+	arvore(pen, dist * fator)
+	pen.Right(ang)
 	pen.Walk(-dist)
 }
 
 func main() {
-	pen := NewPen(600, 500)
-	pen.SetHeading(90)
-	pen.SetPosition(300, 500)
-	arvere(pen, 80)
-	pen.SavePNG("tree.png")
+	pen := NewPen(500, 500);
+	pen.SetRGB(0, 0, 0);
+	pen.SetHeading(90);
+	pen.SetPosition(250, 500);
+
+	arvore(pen, 120);
+
+	pen.SavePNG("arvore.png")
 	fmt.Println("PNG file created successfully.")
 }
