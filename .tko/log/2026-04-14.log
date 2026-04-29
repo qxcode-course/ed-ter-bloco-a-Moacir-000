@@ -1,0 +1,123 @@
+2026-04-14 00:10:35, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0
+2026-04-14 00:10:36, MOVE, v:1, k:ed@fractais_png, mode:BACK
+2026-04-14 09:43:11, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-04-14 09:43:24, MOVE, v:1, k:ed@fractais_png, mode:EDIT
+2026-04-14 09:49:07, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-04-14 09:51:08, MOVE, v:1, k:ed@baruel, mode:EDIT
+2026-04-14 10:12:24, MOVE, v:1, k:eval1@baruel, mode:DOWN
+2026-04-14 10:12:29, MOVE, v:1, k:eval1@baruel, mode:PICK
+2026-04-14 10:12:31, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:5
+2026-04-14 10:12:24, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 10:12:24, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 10:16:58, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 10:21:09, MOVE, v:1, k:eval1@baruel, mode:BACK
+2026-04-14 10:21:16, MOVE, v:1, k:eval1@queimada, mode:DOWN
+2026-04-14 10:21:19, MOVE, v:1, k:eval1@queimada, mode:PICK
+2026-04-14 10:20:15, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 10:21:16, MOVE, v:1, k:eval1@queimada, mode:EDIT
+2026-04-14 10:21:16, MOVE, v:1, k:eval1@queimada, mode:EDIT
+2026-04-14 10:21:53, MOVE, v:1, k:eval1@queimada, mode:EDIT
+2026-04-14 10:25:21, EXEC, v:1, k:eval1@queimada, mode:FULL, size:50, fail:COMP
+2026-04-14 10:25:28, EXEC, v:1, k:eval1@queimada, mode:FULL, rate:0, size:49
+2026-04-14 10:26:45, MOVE, v:1, k:eval1@queimada, mode:EDIT
+2026-04-14 10:31:37, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 10:35:59, EXEC, v:1, k:eval1@queimada, mode:FULL, size:52, fail:COMP
+2026-04-14 10:36:00, MOVE, v:1, k:eval1@queimada, mode:BACK
+2026-04-14 10:36:15, MOVE, v:1, k:eval1@baruel, mode:PICK
+2026-04-14 10:36:16, EXEC, v:1, k:eval1@baruel, mode:FULL, size:30, fail:COMP
+2026-04-14 10:37:05, EXEC, v:1, k:eval1@baruel, mode:FULL, size:32, fail:COMP
+2026-04-14 10:37:21, EXEC, v:1, k:eval1@baruel, mode:FULL, size:32, fail:COMP
+2026-04-14 10:37:27, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:32
+2026-04-14 10:37:42, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:32
+2026-04-14 10:37:58, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:32
+2026-04-14 10:38:23, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:32
+2026-04-14 10:41:06, EXEC, v:1, k:eval1@baruel, mode:FULL, size:30, fail:COMP
+2026-04-14 10:41:05, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 10:41:51, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:33
+2026-04-14 10:44:03, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:33
+2026-04-14 10:44:23, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:35
+2026-04-14 10:44:38, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:35
+2026-04-14 10:46:04, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 10:46:24, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:36
+2026-04-14 10:47:26, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:38
+2026-04-14 10:47:42, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:36
+2026-04-14 10:51:03, MOVE, v:1, k:eval1@baruel, mode:BACK
+2026-04-14 10:47:40, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 10:49:12, MOVE, v:1, k:eval1@queimada, mode:EDIT
+2026-04-14 10:51:12, MOVE, v:1, k:eval1@apagando, mode:DOWN
+2026-04-14 10:51:18, MOVE, v:1, k:eval1@apagando, mode:PICK
+2026-04-14 10:51:12, MOVE, v:1, k:eval1@apagando, mode:EDIT
+2026-04-14 10:51:12, MOVE, v:1, k:eval1@apagando, mode:EDIT
+2026-04-14 10:52:34, MOVE, v:1, k:eval1@apagando, mode:EDIT
+2026-04-14 10:58:05, MOVE, v:1, k:eval1@apagando, mode:BACK
+2026-04-14 10:58:09, MOVE, v:1, k:eval1@baruel, mode:PICK
+2026-04-14 10:58:10, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0
+2026-04-14 11:07:14, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:40
+2026-04-14 11:10:25, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:50
+2026-04-14 11:10:23, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 11:13:20, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0
+2026-04-14 11:16:01, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:44
+2026-04-14 11:16:00, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 11:16:36, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:49
+2026-04-14 11:17:01, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:48
+2026-04-14 11:19:11, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:50
+2026-04-14 11:19:50, MOVE, v:1, k:eval1@baruel, mode:BACK
+2026-04-14 11:20:08, SELF, v:1, k:eval1@baruel, self:1
+2026-04-14 11:20:11, MOVE, v:1, k:eval1@baruel, mode:PICK
+2026-04-14 11:20:12, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0
+2026-04-14 11:19:00, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 11:21:16, MOVE, v:1, k:eval1@baruel, mode:BACK
+2026-04-14 11:21:32, MOVE, v:1, k:eval1@baruel, mode:PICK
+2026-04-14 11:21:33, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0
+2026-04-14 11:25:19, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:50
+2026-04-14 11:26:07, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:51
+2026-04-14 11:25:57, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 11:26:15, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:51
+2026-04-14 11:26:20, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:49
+2026-04-14 11:28:58, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0
+2026-04-14 11:29:59, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:54
+2026-04-14 11:30:19, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:49
+2026-04-14 11:31:09, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0
+2026-04-14 11:30:18, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 11:32:23, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:51
+2026-04-14 11:32:34, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:51
+2026-04-14 11:33:34, EXEC, v:1, k:eval1@baruel, mode:FULL, size:51, fail:COMP
+2026-04-14 11:33:56, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:49
+2026-04-14 11:35:05, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 11:36:35, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:51
+2026-04-14 11:37:16, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:51
+2026-04-14 11:37:24, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:51
+2026-04-14 11:37:42, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:51
+2026-04-14 11:39:10, EXEC, v:1, k:eval1@baruel, mode:FULL, rate:0, size:53
+2026-04-14 11:40:06, MOVE, v:1, k:eval1@baruel, mode:BACK
+2026-04-14 11:40:08, MOVE, v:1, k:eval1@queimada, mode:PICK
+2026-04-14 11:40:10, EXEC, v:1, k:eval1@queimada, mode:FULL, rate:0, size:59
+2026-04-14 11:40:56, EXEC, v:1, k:eval1@queimada, mode:FULL, rate:0, size:59
+2026-04-14 11:38:21, MOVE, v:1, k:eval1@baruel, mode:EDIT
+2026-04-14 11:40:54, MOVE, v:1, k:eval1@queimada, mode:EDIT
+2026-04-14 11:43:45, MOVE, v:1, k:eval1@queimada, mode:BACK
+2026-04-14 11:44:21, SELF, v:1, k:eval1@queimada, self:1
+2026-04-14 19:49:54, MOVE, v:1, k:ed@fractais_png, mode:PICK
+2026-04-14 19:50:46, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0
+2026-04-14 19:50:59, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:51:06, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:51:50, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:53:24, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:53:26, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:54:03, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:54:11, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:54:16, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:54:16, MOVE, v:1, k:ed@fractais_png, mode:EDIT
+2026-04-14 19:54:15, MOVE, v:1, k:ed@fractais_png, mode:EDIT
+2026-04-14 19:56:28, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0
+2026-04-14 19:56:53, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:139
+2026-04-14 19:57:02, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:139
+2026-04-14 19:57:08, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:57:18, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:57:30, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:57:40, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:57:48, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:141
+2026-04-14 19:58:52, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0
+2026-04-14 19:59:00, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0
+2026-04-14 19:59:00, MOVE, v:1, k:ed@fractais_png, mode:EDIT
+2026-04-14 19:57:48, MOVE, v:1, k:ed@fractais_png, mode:EDIT

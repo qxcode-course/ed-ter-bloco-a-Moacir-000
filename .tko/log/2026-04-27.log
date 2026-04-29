@@ -1,0 +1,23 @@
+2026-04-27 10:16:23, MOVE, v:1, k:ed@wordsearch, mode:DOWN
+2026-04-27 10:16:28, MOVE, v:1, k:ed@subset_sum, mode:DOWN
+2026-04-27 10:16:29, MOVE, v:1, k:ed@distancia, mode:DOWN
+2026-04-27 10:16:31, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-04-27 10:16:46, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-04-27 10:16:56, MOVE, v:1, k:ed@subset_sum, mode:PICK
+2026-04-27 10:16:59, EXEC, v:1, k:ed@subset_sum, mode:FULL, rate:0, size:5
+2026-04-27 10:17:28, MOVE, v:1, k:ed@subset_sum, mode:BACK
+2026-04-27 10:17:36, MOVE, v:1, k:ed@distancia, mode:PICK
+2026-04-27 14:28:05, MOVE, v:1, k:ed@vetbuild, mode:DOWN
+2026-04-27 14:28:14, MOVE, v:1, k:ed@vetbuild, mode:PICK
+2026-04-27 14:28:05, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-04-27 14:28:05, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-04-27 14:28:05, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-04-27 14:28:05, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-04-27 14:36:09, EXEC, v:1, k:ed@vetbuild, mode:FULL, size:130, fail:COMP
+2026-04-27 14:38:55, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-04-27 21:55:10, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:131
+2026-04-27 21:55:22, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-04-27 22:07:02, MOVE, v:1, k:ed@vetbuild, mode:BACK
+2026-04-27 22:11:23, MOVE, v:1, k:ed@vetbuild, mode:PICK
+2026-04-27 22:11:24, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:131
+2026-04-27 22:20:38, MOVE, v:1, k:ed@vetbuild, mode:BACK

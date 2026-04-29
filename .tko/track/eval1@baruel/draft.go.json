@@ -1,0 +1,189 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_10-12-31",
+            "content": "@@ -41,555 +41,35 @@\n     \n-var qtd_total, qtd_possui int;%0A%0A    fmt.Scan(&qtd_total, &qtd_possui);%0A%0A    figuras := make(%5B%5Dint, qtd_possui);%0A%0A    figuras_repetidas := make(%5B%5Dint, qtd_possui);%0A%0A    for i := range figuras%7B%0A        fmt.Scan(&figuras%5Bi%5D);%0A    %7D%0A%0A    map_repetidas := make(map%5Bint%5Dbool);%0A%0A    n_repetidas := 0;%0A%0A    for _, figura := range figuras%7B%0A        if(map_repetidas%5Bfigura%5D)%7B%0A            figuras_repetidas%5Bfigura%5D = append(figuras_repetidas, 0);%0A        %7D else%7B%0A            map_repetidas%5Bfigura%5D = true;%0A        %7D%0A    %7D%0A%0A    faltantes := make(map%5Bint%5Dbool);%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_10-36-16",
+            "content": "@@ -113,36 +113,8 @@\n );%0A%0A\n-    fmt.Print(qtd_possui);%0A%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_10-37-05",
+            "content": "@@ -178,26 +178,24 @@\n ssui);%0A%0A    \n-//\n figuras_repe\n@@ -341,18 +341,16 @@\n );%0A%0A    \n-//\n n_repeti\n@@ -447,10 +447,8 @@\n     \n-//\n figu\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-14_10-37-21",
+            "content": "@@ -586,18 +586,16 @@\n  %7D%0A%0A    \n-//\n faltante\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-14_10-37-27",
+            "content": "@@ -123,27 +123,16 @@\n t.Print(\n-qtd_total, \n qtd_poss\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-14_10-37-42",
+            "content": "@@ -126,10 +126,8 @@\n rint\n-ln\n (qtd\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-14_10-37-58",
+            "content": "@@ -105,24 +105,65 @@\n d_possui);%0A%0A\n+    fmt.Println(qtd_total, qtd_possui);%0A%0A\n     figuras \n@@ -314,35 +314,8 @@\n  %7D%0A%0A\n-    fmt.Println(figuras);%0A%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-14_10-38-23",
+            "content": "@@ -150,24 +150,26 @@\n ssui);%0A%0A    \n+//\n figuras_repe\n@@ -198,24 +198,24 @@\n td_possui);%0A\n-\n %0A    for i :\n@@ -265,24 +265,51 @@\n i%5D);%0A    %7D%0A%0A\n+    fmt.Println(figuras);%0A%0A\n     map_repe\n@@ -342,16 +342,18 @@\n );%0A%0A    \n+//\n n_repeti\n@@ -450,21 +450,65 @@\n     \n-fmt.Println(1\n+//figuras_repetidas%5Bfigura%5D = append(figuras_repetidas, 0\n );%0A \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-14_10-41-06",
+            "content": "@@ -154,18 +154,16 @@\n );%0A%0A    \n-//\n figuras_\n@@ -435,35 +435,8 @@\n 1);%0A\n-            n_repetidas++;%0A\n     \n@@ -510,39 +510,8 @@\n  %7D%0A%0A\n-    fmt.Println(n_repetidas);%0A%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_10-41-51",
+            "content": "@@ -150,24 +150,26 @@\n ssui);%0A%0A    \n+//\n figuras_repe\n@@ -422,60 +422,22 @@\n    f\n-iguras_repetidas = append(figuras_repetidas, figura)\n+mt.Println(1);\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-14_10-44-03",
+            "content": "@@ -575,44 +575,8 @@\n  %7D%0A%0A\n-    fmt.Println(figuras_repetidas)%0A%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-14_10-44-23",
+            "content": "@@ -187,17 +187,26 @@\n (%5B%5Dint, \n-0\n+qtd_possui\n );%0A%0A    \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-04-14_10-44-38",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-04-14_10-46-24",
+            "content": "@@ -603,50 +603,8 @@\n s)%0A%0A\n-    fmt.Sprintf(%22%25s%22, figuras_repetidas)%0A%0A\n     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-14_10-47-26",
+            "content": "@@ -599,16 +599,58 @@\n tidas)%0A%0A\n+    fmt.Sprintf(%22%25s%22, figuras_repetidas)%0A%0A\n     fmt.\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-04-14_10-47-42",
+            "content": "@@ -567,87 +567,8 @@\n  %7D%0A%0A\n-    if(len(figuras_repetidas)) == 0%7B%0A        fmt.Println(%22N%22);%0A    %7D else%7B%0A    \n     \n@@ -597,23 +597,16 @@\n petidas)\n-;%0A    %7D\n %0A%0A    fm\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-14_11-07-14",
+            "content": "@@ -716,32 +716,26 @@\n idas);%0A%0A    \n-figuras_\n+//\n faltantes :=\n@@ -744,279 +744,22 @@\n ake(\n-%5B%5Dint, qtd_possui);%0A%0A    map_faltantes := make(map %5Bint%5Dbool);%0A%0A    for _, valor := range figuras%7B%0A        if(map_faltantes%5Bvalor%5D)%7B%0A            figuras_faltantes = append(figuras_faltantes, valor);%0A        %7D else%7B%0A            map_faltantes%5Bvalor%5D = true;%0A        %7D%0A    %7D\n+map%5Bint%5Dbool);\n %0A%0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-04-14_11-10-25",
+            "content": "@@ -559,24 +559,146 @@\n    %7D%0A    %7D%0A%0A\n+    if(len(figuras_repetidas)) == 0%7B%0A        fmt.Println(%22N%22);%0A    %7D else%7B%0A        fmt.Println(figuras_repetidas);%0A    %7D%0A%0A\n     fmt.Prin\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-14_11-16-01",
+            "content": "@@ -559,24 +559,55 @@\n    %7D%0A    %7D%0A%0A\n+    fmt.Println(n_repetidas);%0A%0A\n     figuras_\n@@ -901,158 +901,6 @@\n  %7D%0A%0A\n-    if(len(figuras_repetidas)) == 0%7B%0A        fmt.Println(%22N%22);%0A    %7D else%7B%0A        fmt.Println(figuras_repetidas);%0A    %7D%0A%0A    fmt.Println(n_repetidas);%0A\n %7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-04-14_11-16-36",
+            "content": "@@ -981,24 +981,27 @@\n tidas);%0A    \n+%7D%0A%0A\n     fmt.Prin\n@@ -1018,16 +1018,10 @@\n tidas);%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-14_11-17-01",
+            "content": "@@ -707,9 +707,8 @@\n  if(\n-!\n map_\n@@ -870,45 +870,8 @@\n  %7D%0A%0A\n-    fmt.Println(figuras_faltantes);%0A%0A\n     \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-14_11-19-11",
+            "content": "@@ -699,24 +699,25 @@\n %0A        if(\n+!\n map_faltante\n@@ -875,10 +875,8 @@\n     \n-//\n fmt.\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-14_11-25-19",
+            "content": "@@ -1024,48 +1024,8 @@\n s);%0A\n-        fmt.Println(figuras_faltantes);%0A\n     \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-14_11-26-07",
+            "content": "@@ -1024,26 +1024,24 @@\n s);%0A        \n-//\n fmt.Println(\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-26-15",
+            "content": "@@ -862,24 +862,63 @@\n    %7D%0A    %7D%0A%0A\n+    //fmt.Println(figuras_faltantes);%0A%0A\n     if(len(f\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-26-20",
+            "content": "@@ -1027,108 +1027,8 @@\n s);%0A\n-        if(len(figuras_repetidas) == n_repetidas)%7B%0A            fmt.Println(%22N%22)%0A        %7D else%7B%0A    \n     \n@@ -1061,27 +1061,8 @@\n s);%0A\n-        %7D%0A        %0A\n     \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-14_11-29-59",
+            "content": "@@ -1019,24 +1019,124 @@\n faltantes);%0A\n+        if(len(figuras_repetidas) == n_repetidas)%7B%0A            fmt.Println(%22N%22)%0A        %7D else%7B%0A    \n         fmt.\n@@ -1153,20 +1153,39 @@\n repetidas);%0A\n+        %7D%0A        %0A\n     %7D%0A%7D%0A\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-04-14_11-30-19",
+            "content": "@@ -1066,44 +1066,7 @@\n    %7D\n-%0A%0A    fmt.Println(figuras_faltantes);\n %0A%7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-14_11-32-23",
+            "content": "@@ -592,33 +592,42 @@\n  := make(%5B%5Dint, \n-0\n+qtd_possui\n );%0A%0A    map_falt\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-32-34",
+            "content": "@@ -626,32 +626,33 @@\n ntes := make(map\n+ \n %5Bint%5Dbool);%0A%0A   \n@@ -698,21 +698,20 @@\n  if(\n-!\n map_\n-repetida\n+faltante\n s%5Bva\n@@ -815,24 +815,24 @@\n     map_\n-repetida\n+faltante\n s%5Bvalor%5D\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-33-34",
+            "content": "@@ -609,18 +609,16 @@\n );%0A%0A    \n-//\n map_falt\n@@ -783,16 +783,73 @@\n valor);%0A\n+        %7D else%7B%0A            map_repetidas%5Bvalor%5D = true;%0A\n         \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-33-56",
+            "content": "@@ -687,32 +687,33 @@\n ras%7B%0A        if(\n+!\n map_repetidas%5Bva\n@@ -789,65 +789,8 @@\n r);%0A\n-        %7D else%7B%0A            map_repetidas%5Bvalor%5D = true;%0A\n     \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-14_11-36-35",
+            "content": "@@ -699,9 +699,8 @@\n  if(\n-!\n map_\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-37-16",
+            "content": "@@ -840,12 +840,11 @@\n %5D = \n-fals\n+tru\n e;%0A \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-37-24",
+            "content": "@@ -687,32 +687,33 @@\n ras%7B%0A        if(\n+!\n map_repetidas%5Bva\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-37-42",
+            "content": "@@ -37,87 +37,8 @@\n () %7B\n-%0A%0A    //OBS: acabei esquecendo a formata%C3%A7%C3%A3o de sa%C3%ADda e como expor os faltantes.\n %0A   \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-14_11-39-10",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n\n    //OBS: acabei esquecendo a formata\u00e7\u00e3o de sa\u00edda e como expor os faltantes.\n    var qtd_total, qtd_possui int;\n\n    fmt.Scan(&qtd_total, &qtd_possui);\n\n    figuras := make([]int, qtd_possui);\n\n    figuras_repetidas := make([]int, 0);\n\n    for i := range figuras{\n        fmt.Scan(&figuras[i]);\n    }\n\n    map_repetidas := make(map[int]bool);\n\n    n_repetidas := 0;\n\n    for _, figura := range figuras{\n        if(map_repetidas[figura]){\n            figuras_repetidas = append(figuras_repetidas, figura)\n            n_repetidas++;\n        } else{\n            map_repetidas[figura] = true;\n        }\n    }\n\n    figuras_faltantes := make([]int, 0);\n\n    //map_faltantes := make(map[int]bool);\n\n    for _, valor := range figuras{\n        if(map_repetidas[valor]){\n            figuras_faltantes = append(figuras_faltantes, valor);\n        } else{\n            map_repetidas[valor] = false;\n        }\n    }\n\n    if(len(figuras_repetidas)) == 0{\n        fmt.Println(\"N\");\n    } else{\n        fmt.Println(figuras_repetidas);\n        //fmt.Println(figuras_faltantes);\n        fmt.Println(n_repetidas);\n    }\n\n    fmt.Println(figuras_faltantes);\n}\n",
+            "lines": "53"
+        }
+    ]
+}
