@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_04-43-18",
+            "content": "@@ -10,191 +10,66 @@\n ain%0A\n-%0Atype Node struct %7B%0A    info int%0A    next *Node%0A    prev *Node%0A%7D%0A%0Atype DList struct %7B%0A    head *Node%0A%7D%0A%0Afunc NewDList() *DList%7B%0A    dlist := DList%7B%7D%0A    dlist.head = &Node%7B%7D%0A    dlist;\n+import %22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, Mundo!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-05_04-48-00",
+            "content": "@@ -11,22 +11,8 @@\n in%0A%0A\n-import %22fmt%22%0A%0A\n type\n@@ -26,17 +26,20 @@\n truct %7B%0A\n-%09\n+    \n info int\n@@ -39,17 +39,20 @@\n nfo int%0A\n-%09\n+    \n next *No\n@@ -54,17 +54,20 @@\n t *Node%0A\n-%09\n+    \n prev *No\n@@ -92,17 +92,20 @@\n truct %7B%0A\n-%09\n+    \n head *No\n@@ -132,20 +132,22 @@\n ) *DList\n- \n %7B%0A\n-%09\n+    \n dlist :=\n@@ -159,727 +159,42 @@\n t%7B%7D%0A\n-%09dlist.head = &Node%7B%7D%0A%09dlist.head.next = dlist.head%0A%09dlist.head.prev = dlist.head%0A%09return &dlist%0A%7D%0A%0Afunc insert(A *Node, value int) %7B%0A%09B := A.prev%0A%09C := &Node%7B%0A%09%09info: value,%0A%09%09next: A,%0A%09%09prev: B,%0A%09%7D%0A%09B.next = C%0A%09A.prev = C%0A%7D%0A%0Afunc PushBack(list *DList, value int) %7B //insere antes do head%0A%09insert(list.head, value)%0A%7D%0A%0Afunc PushFront(list *DList, value int) %7B //insere antes do primeiro elemento%0A%09insert(list.head.next, value)%0A%7D%0A%0Afunc print(list *DList) %7B%0A%09it := list.head.next%0A%09fmt.Print(%22%5B %22)%0A%09for %7B%0A%09%09if it == list.head %7B //lista vazia%0A%09%09%09break%0A%09%09%7D%0A%09%09fmt.Printf(%22%25d %22, it.info)%0A%09%09it = it.next%0A%09%7D%0A%09fmt.Print(%22%5D%22)%0A%7D%0A%0Afunc main() %7B%0A%09list := NewDList()%0A%09for i := range 10 %7B%0A%09%09list.PushFront(list, i)%0A%09%7D%0A%09fmt.Println(list)\n+    dlist.head = &Node%7B%7D%0A    dlist;\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-07-05_05-11-12",
+            "content": "@@ -582,32 +582,37 @@\n  value)%0A%7D%0A%0Afunc \n+print\n (list *DList) Fr\n@@ -613,367 +613,105 @@\n st) \n-Front() *Node %7B //primeiro elemento da lista v%C3%A1lido%0A%09return list.head.next%0A%7D%0A%0Afunc (list *DList) Back() *Node %7B //ultimo elemento da lista v%C3%A1lido%0A%09return list.head.prev%0A%7D%0A%0Afunc (list *DList) End() *Node %7B //depois do %C3%BAltimo valido (head)%0A%09return list.head%0A%7D%0A%0A%0Afunc print(list *DList) %7B%0A%09fmt.Print(%22%5B %22)%0A%09for it := list.Front(); it != list.End(); it = it.next%7B\n+%7B%0A%09it := list.head.next%0A%09fmt.Print(%22%5B %22)%0A%09for %7B%0A%09%09if it == list.head %7B //lista vazia%0A%09%09%09break%0A%09%09%7D\n %0A%09%09f\n@@ -845,16 +845,22 @@\n shFront(\n+list, \n i)%0A%09%7D%0A%09f\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-07-05_05-20-48",
+            "content": "@@ -379,32 +379,40 @@\n rev = C%0A%7D%0A%0Afunc \n+PushBack\n (list *DList) Pu\n@@ -411,32 +411,45 @@\n List\n-) PushFront(value int) %7B\n+, value int) %7B //insere antes do head\n %0A%09in\n@@ -462,21 +462,16 @@\n ist.head\n-.next\n , value)\n@@ -471,32 +471,41 @@\n  value)%0A%7D%0A%0Afunc \n+PushFront\n (list *DList) Pu\n@@ -504,19 +504,10 @@\n List\n-) PushBack(\n+, \n valu\n@@ -514,16 +514,52 @@\n e int) %7B\n+ //insere antes do primeiro elemento\n %0A%09insert\n@@ -560,32 +560,37 @@\n insert(list.head\n+.next\n , value)%0A%7D%0A%0Afunc\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-07-05_05-26-36",
+            "content": "@@ -936,16 +936,31 @@\n t.info)%0A\n+%09%09it = it.next%0A\n %09%7D%0A%09fmt.\n@@ -1052,21 +1052,27 @@\n (i)%0A%09%7D%0A%09\n-p\n+fmt.P\n rint\n+ln\n (list)%0A%7D\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-07-05_05-29-40",
+            "content": "@@ -808,24 +808,29 @@\n ad%0A%7D%0A%0A%0Afunc \n+print\n (list *DList\n@@ -835,40 +835,26 @@\n st) \n-String() string %7B%0A%09saida := \n+%7B%0A%09fmt.Print(\n %22%5B %22\n+)\n %0A%09fo\n@@ -913,23 +913,13 @@\n %7B%0A%09%09\n-saida += \n fmt.\n-Sp\n+P\n rint\n@@ -944,26 +944,22 @@\n %09%7D%0A%09\n-return saida + \n+fmt.Print(\n %22%5D%22\n+)\n %0A%7D%0A%0A\n@@ -1036,17 +1036,16 @@\n t(i)%0A%09%7D%0A\n-%0A\n %09print(l\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-05_05-33-05",
+            "content": "@@ -1065,13 +1065,9 @@\n %7D%0A%0A%09\n-fmt.P\n+p\n rint\n@@ -1073,8 +1073,10 @@\n t(list)%0A\n+%7D%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-07-05_05-33-15",
+            "content": "@@ -1074,15 +1074,11 @@\n rint\n-ln\n (list)%0A\n-%7D%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-05_05-34-09",
+            "content": "@@ -1047,20 +1047,21 @@\n ist.Push\n-Back\n+Front\n (i)%0A%09%7D%0A%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-07-05_05-34-50",
+            "content": "@@ -386,326 +386,8 @@\n %0A%7D%0A%0A\n-func remove(B *Node)%7B%0A    A := B.prev%0A    C := B.next%0A%0A    A.next = C%0A    C.prev = A%0A%0A    B.next = nil%0A    B.prev = nil%0A%7D%0A%0Afunc (list *DList) PopBack(value int)%7B //remove o %C3%BAltimo da lista%0A    remove(list.head.prev)%0A%7D%0A%0Afunc (list *DList) PopFront(value int)%7B //remove o primeiro da lista%0A    remove(list.head.next)%0A%7D%0A%0A\n func\n@@ -1063,28 +1063,8 @@\n %09%7D%0A%0A\n-    list.PushBack()%0A\n %09fmt\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-07-05_05-42-45",
+            "content": "@@ -532,16 +532,25 @@\n PopBack(\n+value int\n )%7B //rem\n@@ -629,16 +629,25 @@\n opFront(\n+value int\n )%7B //rem\n",
+            "lines": "90"
+        },
+        {
+            "label": "2026-07-05_05-44-03",
+            "content": "@@ -1369,18 +1369,19 @@\n   list.P\n-op\n+ush\n Back()%0A%09\n",
+            "lines": "90"
+        },
+        {
+            "label": "2026-07-05_05-44-10",
+            "content": "@@ -727,27 +727,8 @@\n t) %7B\n- //insere na frente\n %0A%09in\n@@ -802,23 +802,8 @@\n t) %7B\n- //insere atr%C3%A1s\n %0A%09in\n@@ -1147,19 +1147,8 @@\n ng %7B\n- //toString\n %0A%09sa\n",
+            "lines": "90"
+        },
+        {
+            "label": "2026-07-05_05-44-42",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Node struct {\n\tinfo int\n\tnext *Node\n\tprev *Node\n}\n\ntype DList struct {\n\thead *Node\n}\n\nfunc NewDList() *DList {\n\tdlist := DList{}\n\tdlist.head = &Node{}\n\tdlist.head.next = dlist.head\n\tdlist.head.prev = dlist.head\n\treturn &dlist\n}\n\nfunc insert(A *Node, value int) {\n\tB := A.prev\n\tC := &Node{\n\t\tinfo: value,\n\t\tnext: A,\n\t\tprev: B,\n\t}\n\tB.next = C\n\tA.prev = C\n}\n\nfunc remove(B *Node){\n    A := B.prev\n    C := B.next\n\n    A.next = C\n    C.prev = A\n\n    B.next = nil\n    B.prev = nil\n}\n\nfunc (list *DList) PopBack(){ //remove o \u00faltimo da lista\n    remove(list.head.prev)\n}\n\nfunc (list *DList) PopFront(){ //remove o primeiro da lista\n    remove(list.head.next)\n}\n\nfunc (list *DList) PushFront(value int) { //insere na frente\n\tinsert(list.head.next, value)\n}\n\nfunc (list *DList) PushBack(value int) { //insere atr\u00e1s\n\tinsert(list.head, value)\n}\n\nfunc (list *DList) Front() *Node { //primeiro elemento da lista v\u00e1lido\n\treturn list.head.next\n}\n\nfunc (list *DList) Back() *Node { //ultimo elemento da lista v\u00e1lido\n\treturn list.head.prev\n}\n\nfunc (list *DList) End() *Node { //depois do \u00faltimo valido (head)\n\treturn list.head\n}\n\n\nfunc (list *DList) String() string { //toString\n\tsaida := \"[ \"\n\tfor it := list.Front(); it != list.End(); it = it.next{\n\t\tsaida += fmt.Sprintf(\"%d \", it.info)\n\t}\n\treturn saida + \"]\"\n}\n\nfunc main() {\n\tlist := NewDList()\n\tfor i := range 10 {\n\t\tlist.PushBack(i)\n\t}\n\n    list.PopBack()\n\tfmt.Println(list)\n}\n",
+            "lines": "90"
+        }
+    ]
+}
